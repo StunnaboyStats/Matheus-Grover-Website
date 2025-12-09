@@ -1,0 +1,76 @@
+---
+title: "Contact"
+format: html
+toc: false
+page-layout: article
+---
+
+```{=html}
+<style>
+.contact-wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* Center the page title */
+.contact-wrapper h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Keep the card nicely centered */
+.contact-wrapper .card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Center the chips row */
+.contact-wrapper .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 6px;
+  justify-content: center;
+}
+
+/* Reuse link-chip styling */
+.contact-wrapper .link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+/* Center the small text under the chips */
+.contact-wrapper .small {
+  text-align: center;
+  font-size: 0.95rem;
+}
+</style>
+```
+
+:::: {.contact-wrapper}
+# Contact
+
+:::: card
+<h3>Contact</h3>
+
+::: links
+<a class="link-chip" href="mailto:Tayegrover@g.ucla.edu">✉️ Email</a>
+<a class="link-chip" href="https://www.linkedin.com/in/matheusgrover/">🔗LinkedIn</a>
+<a class="link-chip" href="https://github.com/StunnaboyStats">💻 GitHub</a>
+<a class="link-chip" href="https://x.com/StunnaboySosa">𝕏 Profile</a>
+<a class="link-chip" href="/files/Grover Resume 12.2025.pdf">📄 Resume</a>
+:::
+
+<p class="small">
+  Best way to reach me is email.
+</p>
+::::
+::::
+

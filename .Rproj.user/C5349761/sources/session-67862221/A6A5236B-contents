@@ -1,0 +1,53 @@
+---
+title: "Books"
+format: html
+---
+
+## Current Reads
+
+::: {.grid .gap-4}
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/WT.jpg){style="width:100%; border-radius:12px;"}
+**Wind and Truth**  
+Fantasy • 1344 pgs
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/HTS.jpg){style="width:100%; border-radius:12px;"}
+**How to Think about Statistics**  
+Stats • 244 pgs
+:::
+
+:::
+<!-- closes the first grid -->
+
+## Finished Recently
+
+::: {.grid .gap-4}
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/SFD.jpg){style="width:100%; border-radius:12px;"}
+**Speaker for the Dead**  
+Sci-Fi • 415 pgs
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/LF.jpg){style="width:100%; border-radius:12px;"}
+**The Light of all that Falls**  
+Fantasy • 864 pgs
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/X.jpg){style="width:100%; border-radius:12px;"}
+**Xenocide**  
+Sci-Fi • 592 pgs
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/EG.jpg){style="width:100%; border-radius:12px;"}
+**Ender's Game**  
+Sci-Fi • 352 pgs
+:::
+
+:::

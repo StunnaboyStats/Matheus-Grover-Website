@@ -1,0 +1,75 @@
+---
+title: "LEGO"
+format: html
+---
+
+## Recent pickups
+
+::: {.grid .gap-4}
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/LKC.jpg){style="width:100%; border-radius:12px;"}
+
+**10305 — Lion Knights' Castle**  
+Castle • 4514 pcs  
+New
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/75396.jpg){style="width:100%; border-radius:12px;"}
+
+**75396 — Sarlacc Pitt**  
+Starwars • 558 pcs  
+New
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![](images/lego/76300.jpg){style="width:100%; border-radius:12px;"}
+
+**76300 — Arkham Asylum**  
+Batman • 2953 pcs  
+New
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Medieval Town Square](images/lego/10332.jpg){style="width:100%; border-radius:12px;"}
+**10332 — Medieval Town Square**  
+Castle • 3304 pcs  
+New
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Starwars Logo](images/lego/SW_Logo.png){style="width:100%; border-radius:12px;"}
+**75407 — Starwars Logo**  
+Starwars • 700 pcs  
+New
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Starwars Advent](images/lego/Advent.png){style="width:100%; border-radius:12px;"}
+**75407 — Starwars Advent**  
+Starwars • 263 pcs  
+New
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Jungle Cutter](images/lego/JC.jpg){style="width:100%; border-radius:12px;"}
+**7626 — Jungle Cutter**  
+Indiana Jones • 511 pcs  
+Used
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Bad Batch Shuttle](images/lego/BB2.png){style="width:100%; border-radius:12px;"}
+**75314 — Bad Batch Shuttle**  
+Starwars • 969 pcs  
+New
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Viking Village](images/lego/VV.png){style="width:100%; border-radius:12px;"}
+**21343 — Viking Village**  
+Icons • 2103 pcs  
+New
+:::
+:::

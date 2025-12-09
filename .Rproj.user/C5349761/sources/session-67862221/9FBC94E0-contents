@@ -1,0 +1,119 @@
+/* Navbar in dark mode */
+body.quarto-dark .navbar {
+  background-color: #b79bff !important;  /* light purple */
+}
+
+body.quarto-dark .navbar .navbar-brand,
+body.quarto-dark .navbar .nav-link {
+  color: #ffffff !important;
+}
+
+body.quarto-dark .navbar .nav-link:hover {
+  color: #f3e6ff !important;
+}
+
+/* Page header (the big blue block behind "Home") in dark mode */
+body.quarto-dark .quarto-title-block,
+body.quarto-dark .quarto-title-block .quarto-title-block-header,
+body.quarto-dark .quarto-title-banner {
+  background-color: #b79bff !important;
+  border-bottom: none !important;
+}
+
+/* Make sure the title text stays readable */
+body.quarto-dark .quarto-title-block .title,
+body.quarto-dark .quarto-title-block h1,
+body.quarto-dark .quarto-title-block h2 {
+  color: #ffffff !important;
+}
+/* Buttons in dark mode (primary button color override) */
+body.quarto-dark .btn-primary,
+body.quarto-dark .btn-primary:active,
+body.quarto-dark .btn-primary:focus,
+body.quarto-dark .btn-primary:hover {
+  background-color: #b79bff !important;
+  border-color: #b79bff !important;
+  color: #ffffff !important;
+}
+
+/* Secondary buttons if you want them to match too */
+body.quarto-dark .btn-secondary {
+  background-color: #d7c5ff !important;
+  border-color: #d7c5ff !important;
+  color: #000000 !important;
+}
+/* Remove the green link icon on headings */
+.anchorjs-link {
+  display: none !important;
+}
+/* Outline-primary buttons in dark mode */
+body.quarto-dark .btn-outline-primary {
+  color: #b79bff !important;                /* text */
+  border-color: #b79bff !important;         /* border */
+}
+
+body.quarto-dark .btn-outline-primary:hover,
+body.quarto-dark .btn-outline-primary:active,
+body.quarto-dark .btn-outline-primary:focus {
+  background-color: #b79bff !important;     /* filled purple on hover */
+  border-color: #b79bff !important;
+  color: #ffffff !important;                /* white text when filled */
+}
+
+/* Outline-secondary buttons in dark mode */
+body.quarto-dark .btn-outline-secondary {
+  color: #d7c5ff !important;
+  border-color: #d7c5ff !important;
+}
+
+body.quarto-dark .btn-outline-secondary:hover,
+body.quarto-dark .btn-outline-secondary:active,
+body.quarto-dark .btn-outline-secondary:focus {
+  background-color: #d7c5ff !important;
+  border-color: #d7c5ff !important;
+  color: #000000 !important;                /* readable dark text */
+}
+/* Full-width footer background image */
+footer.footer {
+  background-image: url("images/arsenal/tree.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 28px 0;
+}
+
+/* Center footer content in a row */
+footer.footer .nav-footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Avatar image */
+.footer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text + link styling */
+.footer-name,
+.footer-link {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+/* The purple bar behind the footer content */
+footer.footer .nav-footer {
+  background-color: #b79bff !important;   /* your navbar purple */
+  padding: 20px 0;
+}
+/* Make the LinkedIn text blue */
+.footer-link {
+  color: #0A66C2 !important;   /* LinkedIn blue */
+}
+

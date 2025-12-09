@@ -1,0 +1,45 @@
+---
+title: "Pook"
+format: html
+---
+
+:::: {#locked style="max-width:480px;margin:6rem auto;text-align:center;"}
+## Enter Password
+
+<input id="pw" type="password" style="padding:8px;width:80%;" autofocus>
+
+::: {style="margin-top:10px;"}
+<button onclick="unlock()" style="padding:8px 14px;">Unlock</button>
+:::
+
+<p id="msg" style="color:#c00;">
+
+</p>
+::::
+
+::: {#content style="display:none;max-width:700px;margin:2rem auto;"}
+❤️ hi amber
+:::
+
+```{=html}
+<script>
+  // SHA-256 hash of "PTown"
+  const correctHash = "c238204a4366e5170eaf8cb1b7ab469cdf64d35b6a872618a60006c5666bf421";
+
+  async function sha256(text) {
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  async function unlock() {
+    const pw = document.getElementById("pw").value;
+    const hash = await sha256(pw);
+    if (hash === correctHash) {
+      document.getElementById("locked").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      document.getElementById("msg").textContent = "Wrong password";
+    }
+  }
+</script>
+```

@@ -1,0 +1,373 @@
+################################################################
+# Preliminaries
+################################################################
+
+rm( list = ls() )
+library( stringr )
+library( sqldf )
+library( googlesheets4 )
+
+
+################################################################
+# Load data and other objects
+################################################################
+
+Prefix_Base <- "/Users/tayegrover/Desktop/Arsenal_Data/418Project/"
+
+Prefix_Project <- 'Clean/'
+
+Prefix <- paste0( Prefix_Base, Prefix_Project )
+
+Link <- 'https://docs.google.com/spreadsheets/d/1TO1Ek7FnCFKcEMIcXEK4rwpvX-M3YxlGrxINWPd2JpM/edit?usp=sharing'
+
+Arsenal_Dataset_Draft <- read_sheet( Link, sheet = 'Current_Data' )
+
+Dirty_Data <- as.data.frame( Arsenal_Dataset_Draft )
+
+Dirty_Data <- as.data.frame(Arsenal_Dataset_Draft) %>% 
+  filter(Team == "Arsenal")
+
+################################################################
+#Cleaning
+################################################################
+
+
+Dirty_Data$Date <- as.character( Dirty_Data$Date )
+
+Dirty_Data$Time <- substr( as.character( Dirty_Data$Time ), 12, 16 )
+
+Dirty_Data$xGAg <- as.numeric( unlist( Dirty_Data$xGAg ) )
+Dirty_Data$xG <- as.numeric( unlist( Dirty_Data$xG ) )
+################################################################
+
+################################################################
+#STRING Cleaning
+################################################################
+library(dplyr)
+library(stringr)
+library(purrr)
+
+fix_token <- function(tok) {
+  tok <- str_remove_all(tok, "[^0-9]") 
+  if (str_detect(tok, "^20[0-9]{2}$"))          
+    tok <- str_sub(tok, 4, 4) 
+  if (tok %in% c("0", "")) return(NA_character_) 
+  as.character(as.integer(tok))              
+}
+
+clean_formation <- function(x) {
+  x <- as.character(x)                         
+  x %>%
+    str_replace_all("/", "-") %>% #4/3/03 → 4-3-03
+    str_split("-", simplify = FALSE) %>%
+    map_chr(function(parts) {
+      parts <- map_chr(parts, fix_token)
+      parts <- parts[!is.na(parts)]
+      paste(parts, collapse = "-")
+    })
+}
+
+Data <- Dirty_Data %>% mutate(Formation = clean_formation(Formation))
+Data <- Data %>% 
+  mutate(`OppFormation` = clean_formation(as.character(`OppFormation`)))
+################################################################
+
+################################################################
+#Date
+################################################################
+library(lubridate)
+
+Data$Date <- ymd(Data$Date)
+head( Data )
+
+str( Data )
+################################################################
+
+
+
+################################################################
+#Cleaning Results
+################################################################
+
+library(dplyr)
+Data <- Data %>%
+  mutate(Result = factor(Result, levels = c("W", "D", "L")), 
+         Points = recode(Result, W = 3L, D = 1L, L = 0L))
+
+################################################################
+
+
+################################################################
+#Season and Era
+################################################################
+
+Data <- Data %>% 
+  mutate(Season = if_else(
+    month(Date) >= 7,                                     
+    paste0(year(Date), "/", substr(year(Date) + 1, 3, 4)),
+    paste0(year(Date) - 1, "/", substr(year(Date), 3, 4))
+  ))
+
+Data <- Data %>%
+  mutate(era = if_else(Season <= "2022/23", "Pre", "Post"))
+
+################################################################
+
+
+
+
+################################################################
+#Join for Yellow Card
+################################################################
+
+Link <- 'https://docs.google.com/spreadsheets/d/1TO1Ek7FnCFKcEMIcXEK4rwpvX-M3YxlGrxINWPd2JpM/edit?usp=sharing'
+
+Arsenal_Dataset_Draft_2 <- read_sheet( Link, sheet = 'YR' )
+
+YR_Data <- as.data.frame( Arsenal_Dataset_Draft_2 )
+
+library(lubridate)
+
+YR_Data$Date <- ymd(YR_Data$Date)
+
+Data$orig_row <- seq_len(nrow(Data))
+Card_Data <- sqldf(
+  "SELECT 
+     D.orig_row,
+     D.*,
+     YR.CrdY,
+     YR.CrdR,
+     YR.Two_CrdY
+   FROM Data    AS D
+   LEFT JOIN YR_Data AS YR
+     ON D.Date = YR.Date
+    AND D.Team = YR.Team
+   ORDER BY D.orig_row"
+)
+
+
+Card_Data$orig_row <- NULL
+
+
+################################################################
+
+
+
+
+################################################################
+#Difficulty
+################################################################
+
+library(dplyr)
+
+top_teams <- c("Arsenal", "Aston Villa", "Atalanta", "Bayern Munich", "Dortmund", "Inter", "Leverkusen", "Liverpool", "Manchester City", "Napoli", "Newcastle Utd", "PSG", "RB Leipzig", "Real Madrid", "Sporting CP")
+
+good_teams <- c("Brighton", "Chelsea", "Feyenoord", "Juventus", "Manchester Utd", "Monaco", "Porto", "PSV Eindhoven", "Milan")
+
+mid_teams <- c(
+  "Ajax", "Bologna", "Bournemouth", "Brentford", "Club Brugge", "Crystal Palace", "FC Copenhagen", "Fulham", "Girona", "Lens", "Lille", "Rangers", "Tottenham", "Union SG", "West Ham")
+
+low_teams <- c("Everton", "Nottingham Forest", "Red Star", "Sevilla", "Shakhtar", "Slovan Bratislava", "Sparta Prague", "Toulouse", "Wolves", "Young Boys")
+
+non_league_teams <-c("Accington Stanley", "Bodo Glimt", "Bolton", "Bristol City", "Burnley", "Derby County", "Dinamo Zagreb", "Huddersfield", "Ipswich Town", "LASK", "Leeds United", "Leicester City", "Leyton Orient", "Luton Town", "Norwich City", "Oxford United", "Plymouth Argyle", "Preston", "Salford City", "Sheffield Utd", "Southampton", "Watford", "Zurich")
+
+Dif_df <- Card_Data %>%
+  mutate(Opponent_difficulty = case_when(
+    Opponent %in% top_teams ~ "Top",
+    Opponent %in% good_teams ~ "Good",
+    Opponent %in% mid_teams ~ "Mid",
+    Opponent %in% low_teams ~ "Low",
+    Opponent %in% non_league_teams ~ "Non-League",
+    TRUE ~ "Other"))
+
+defensive_forms <- c("5-3-2", "4-5-1", "5-4-1", "4-4-1-1")
+balanced_forms <- c("4-2-3-1", "4-4-2", "4-1-2-1-2", "4-3-1-2", "4-2-2-2", "3-5-1-1", "3-5-2", "3-4-1-2", "3-5-2-1", "4-3-2-1", "4-1-4-1")
+attacking_forms <- c("3-2-4-1", "3-4-3", "4-3-3", "3-1-4-2", "4-4-3", "4-2-4")
+
+Form_df <- Dif_df %>%
+  mutate(formation_style = case_when(
+    Formation %in% defensive_forms ~ "Defensive",
+    Formation %in% balanced_forms   ~ "Balanced",
+    Formation %in% attacking_forms ~ "Attacking",
+    TRUE ~ "Other"),
+    
+    opp_formation_style = case_when(
+      OppFormation %in% defensive_forms ~ "Defensive",
+      OppFormation %in% balanced_forms~ "Balanced",
+      OppFormation %in% attacking_forms ~ "Attacking",
+      TRUE ~ "Other")
+  )
+
+Form_df <- Form_df %>%
+  mutate( Opponent_difficulty_level = case_when(
+    Opponent_difficulty == "Non-League" ~ 0,
+    Opponent_difficulty == "Low" ~ 1,
+    Opponent_difficulty == "Mid" ~ 2,
+    Opponent_difficulty == "Good" ~ 3,
+    Opponent_difficulty == "Top" ~ 4, TRUE ~ NA_real_),
+    
+    formation_level = case_when(
+      formation_style == "Defensive" ~ 1,
+      formation_style == "Holding"   ~ 2,
+      formation_style == "Attacking" ~ 3, TRUE ~ 0),
+    
+    opp_formation_level = case_when(
+      opp_formation_style == "Defensive" ~ 1,
+      opp_formation_style == "Holding"   ~ 2,
+      opp_formation_style == "Attacking" ~ 3, TRUE ~ 0)
+  )
+
+################################################################
+
+################################################################
+#LOGIT
+################################################################
+
+
+library( dplyr )
+library (pROC)
+
+Flag_df <- Form_df %>%
+  mutate(Win = ifelse(Result == "W", 1, 0)) %>%
+  mutate(Win = factor(Win, levels = c(0,1), labels = c("NoWin","Win"))) %>%
+  
+  select(Win, era, xG, Poss, CrdY, CrdR, Two_CrdY, Opponent_difficulty, formation_style, opp_formation_style) %>%
+  na.omit()
+
+ACL_Fit_Logistic_1 <- glm(Win ~ era + xG + Poss, data = Flag_df, family = binomial)
+
+
+ACL_Fit_Logistic_2 <- glm(Win ~ era * (xG + Poss + CrdY + CrdR + Two_CrdY), data   = Flag_df, family = binomial)
+
+ACL_Fit_Logistic_3 <- glm(Win ~ era * (xG + Poss + formation_style + Opponent_difficulty + opp_formation_style + CrdY + CrdR + Two_CrdY) , data   = Flag_df, family = binomial)
+
+
+ACL_ROC_Logistic_1 <- roc( ACL_Fit_Logistic_1$y, ACL_Fit_Logistic_1$fitted.values )
+
+ACL_ROC_Logistic_2 <- roc( ACL_Fit_Logistic_2$y, ACL_Fit_Logistic_2$fitted.values )
+
+ACL_ROC_Logistic_3 <- roc( ACL_Fit_Logistic_3$y, ACL_Fit_Logistic_3$fitted.values )
+
+plot( ACL_ROC_Logistic_1 )
+
+lines( ACL_ROC_Logistic_2, col = "lightblue" )
+
+lines( ACL_ROC_Logistic_3, col = "coral" )
+
+auc( ACL_ROC_Logistic_1 )
+
+auc( ACL_ROC_Logistic_2 )
+
+auc( ACL_ROC_Logistic_3 )
+
+
+Flag_df$Logistic_1 <- ACL_Fit_Logistic_1$fitted.values
+
+Flag_df$Logistic_2 <- ACL_Fit_Logistic_2$fitted.values
+
+Flag_df$Logistic_3 <- ACL_Fit_Logistic_3$fitted.values
+
+summary(ACL_Fit_Logistic_3)$coefficients
+
+################################################################
+
+
+################################################################
+#Decision Tree
+################################################################
+
+set.seed(29)
+library( rpart )
+library( rpart.plot )
+
+#DT FIT
+ACL_Fit_Tree_1 <- rpart(Win ~ era + xG + Poss + CrdY + CrdR + Two_CrdY + formation_style + Opponent_difficulty + opp_formation_style, data = Flag_df, method = "class")
+
+Tree_Pre  <- rpart(Win ~ xG + Poss + formation_style + Opponent_difficulty + CrdY,
+                   data = filter(Flag_df, era == "Pre"),  method = "class")
+
+Tree_Post <- rpart(Win ~ xG + Poss + formation_style + Opponent_difficulty + CrdY,data = filter(Flag_df, era == "Post"), method = "class")
+
+
+#DT Plot
+rpart.plot(ACL_Fit_Tree_1, type = 2, extra = 104, fallen.leaves = TRUE, main = "All Seasons Decision Tree")
+
+rpart.plot(Tree_Pre, type = 2, extra = 104, fallen.leaves = TRUE, main = "Pre-Shift Decision Tree")
+
+rpart.plot(Tree_Post, type = 2, extra = 104, fallen.leaves = TRUE, main = "Post-Shift Decision Tree")
+
+#ROC
+ACL_ROC_Tree_1 <- roc( ACL_Fit_Tree_1$y, as.numeric( predict( ACL_Fit_Tree_1, type = "class" ) ) )
+
+ACL_ROC_Tree_Pre <- roc( Tree_Pre$y, as.numeric( predict( Tree_Pre, type = "class" ) ) )
+
+ACL_ROC_Tree_Post <- roc( Tree_Post$y, as.numeric( predict( Tree_Post, type = "class" ) ) )
+
+#ROC PLOT
+plot( ACL_ROC_Tree_1 )
+
+lines( ACL_ROC_Tree_Pre, col = "lightblue" )
+
+lines( ACL_ROC_Tree_Post, col = "coral" )
+
+auc( ACL_ROC_Tree_1 )
+
+auc( ACL_ROC_Tree_Pre )
+
+auc( ACL_ROC_Tree_Post )
+
+################################################################
+
+
+
+################################################################
+#K means
+################################################################
+
+library(dplyr)
+library(ggplot2)
+library(pROC)
+
+set.seed( 29 )
+
+ACL_KM_1 <- Flag_df %>% select(xG, CrdY, CrdR, Two_CrdY) 
+ACL_Scaled_1 <- scale( ACL_KM_1 )
+
+ACL_Fit_K_Means_1 <- kmeans(ACL_Scaled_1, centers = 2, nstart = 25)
+
+Form_df <- Form_df %>% 
+  mutate(K_Means_1 = factor(ACL_Fit_K_Means_1$cluster, levels = 1:2, labels = c("Open Game","Low Block")))
+
+ggplot( Form_df, aes( x = xG, y = CrdY, color = K_Means_1 ) ) +
+  geom_point( alpha = 0.6, size = 2 ) +
+  labs( title = "K-means Clustering Chance and Discipline",
+        subtitle = "Clusters based on xG and Cards",
+        x = "Expected Goals(xG)",
+        y= "Yellow Cards",
+        color = "Cluster")
+
+
+cluster_num1 <- as.numeric(Form_df$K_Means_1) - 1
+
+
+
+ACL_ROC_K_Means_1 <- roc( Form_df$Points, cluster_num1 )
+
+
+plot( ACL_ROC_K_Means_1, col="gold")
+
+
+
+auc( ACL_ROC_K_Means_1 )
+
+
+################################################################
+
+
+################################################################
+# Save
+################################################################
+
+write.csv( Form_df, paste0( Prefix_Base, 'ACL_Project(v730).csv' ), row.names = FALSE, na = '' )
+
+################################################################

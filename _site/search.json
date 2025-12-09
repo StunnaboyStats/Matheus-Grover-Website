@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "Books Index.html",
+    "href": "Books Index.html",
+    "title": "Personal",
+    "section": "",
+    "text": "Enter Password\n\n Unlock\n\n\n\n\n\n❤️ hi amber\n\n\n\nThis is hidden until the password is correct."
+  },
+  {
+    "objectID": "Arsenal Index.html",
+    "href": "Arsenal Index.html",
+    "title": "Arsenal Match Tracker",
+    "section": "",
+    "text": "Kickoff times shown in Los Angeles"
+  },
+  {
+    "objectID": "Arsenal Index.html#upcoming",
+    "href": "Arsenal Index.html#upcoming",
+    "title": "Arsenal Match Tracker",
+    "section": "Upcoming",
+    "text": "Upcoming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nOpponent\nHome/Away\nCompetition\nKickoff\nResult\nxG For\nxG Against\nNotes\n\n\n\n\n2025-11-01\nBurnley\nAway\nPremier League\n8:00 AM"
+  },
+  {
+    "objectID": "Arsenal Index.html#results",
+    "href": "Arsenal Index.html#results",
+    "title": "Arsenal Match Tracker",
+    "section": "Results",
+    "text": "Results\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nOpponent\nHome/Away\nCompetition\nKickoff\nResult\nxG For\nxG Against\nNotes\n\n\n\n\n2025-10-29\nBrighton\nHome\nEFL\n12:30 PM\n2-0\n1.2\n1.6\nNwaneri 57’, Saka 76’\n\n\n2025-10-26\nCrystal Palace\nHome\nPremier League\n7:00 AM\n1-0\n0.9\n0.5\nEze 39’\n\n\n2025-10-21\nAtletico Madrid\nHome\nUCL\n12:00 PM\n4-0\n2.2\n0.7\nGabriel 57’, Martinelli 64’, Gyokeres 67’,70’\n\n\n2025-10-18\nFulham\nAway\nPremier League\n9:30 AM\n1-0\n1.87\n0.44\nTrossard 58’\n\n\n2025-10-04\nWest Ham United\nHome\nPremier League\n7:00 AM\n2-0\n2.8\n0.5\nRice 38’, Saka 67’(P)\n\n\n2025-10-01\nOlympiacos\nHome\nUCL\n12:00 PM\n2-0\n2.9\n0.5\nMartinelli 12’, Saka 90+2’\n\n\n2025-09-28\nNewcastle United\nAway\nPremier League\n8:30 AM\n2-1\n2.0\n0.6\nMerino 84’, Gabriel 90+6’\n\n\n2025-09-24\nPort Vale\nAway\nEFL\n12:00 PM\n2-0\n1.1\n0.1\nEze 8’, Trossard 86’\n\n\n2025-09-21\nMan City\nHome\nPremier League\n8:30 AM\n1-1\n0.9\n0.9\nMartinelli 90+3’\n\n\n2025-09-16\nAthletic Club\nAway\nUCL\n09:45 AM\n2-0\n1.3\n0.4\nMartinelli 72’, Trossard 87’\n\n\n2025-09-13\nNottingham Forest\nHome\nPremier League\n4:30 AM\n3-0\n1.8\n0.2\nZubimendi 32’, 79’, Gyokeres 46’\n\n\n2025-08-31\nLiverpool\nAway\nPremier League\n8:30 AM\n0-1\n0.5\n0.5\n\n\n\n2025-08-23\nLeeds United\nHome\nPremier League\n9:30 AM\n5-0\n2.9\n0.2\nTimber 34’, 56’, Saka 45+1’, Gyokeres 48’, 90+5’(P)\n\n\n2025-09-18\nMan United\nAway\nPremier League\n12:00 PM\n1-0\n1.3\n1.5\nCalafiori 13’\n\n\n\n#| 2025-09-18 | Sample United | Away | Premier League | 12:00 PM| 0-0 | 1.2 | 0.6 | Raya late save kept it level |\n\nTip: For quick edits, keep one blank row at the bottom of each table to copy."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome. I am a Master’s student in Applied Statistics and Data Science at UCLA. This site is a hub for my projects, coursework, and things I enjoy, like Arsenal, Books, and LEGO. Eventually I will expanding the Arsenal and Lego Sections to include two upcoming projects I’m working on that are not ready for the site."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Home",
+    "section": "Overview",
+    "text": "Overview\nBelow is a preview of sections of my website. You can also reach all the featured sections from the navbar above. I’m a huge fan of dark themes, every chance I get I use them. If you’re not a fan, you can switch back to light mode in the top right."
+  },
+  {
+    "objectID": "index.html#featured-sections",
+    "href": "index.html#featured-sections",
+    "title": "Home",
+    "section": "Featured sections",
+    "text": "Featured sections\n\n\n\n\n\n\nArsenal Index\n\n\nArsenal Match Data and Schedule for 2025/2026 Season\n\nExplore Arsenal\n\n\n\n\n\n\n\n\nLEGO Index\n\n\nLEGO sets recently added to the collection.\n\nExplore LEGO\n\n\n\n\n\n\n\n\nSchool Index\n\n\nAcademic work from UCLA, Projects, Papers, and Graphics\n\nExplore School\n\n\n\n\n\n\n\n\nBooks Index\n\n\nBooks I am reading or have read within the last year.\n\nExplore Books"
+  },
+  {
+    "objectID": "index.html#recent-highlights",
+    "href": "index.html#recent-highlights",
+    "title": "Home",
+    "section": "Recent highlights",
+    "text": "Recent highlights\nA few current things from each page:\n-Added gas and LA Crime projects from STAT 421\n-Arsenal analytics: manually scraping data\n-LEGO price prediction project: watching castle prices, just built the medieval castle set so any fantasy build has been a focus\n-Reading for of Wind and Truth\nYou can find more detail inside each section."
+  },
+  {
+    "objectID": "index.html#about-and-contact",
+    "href": "index.html#about-and-contact",
+    "title": "Home",
+    "section": "About and contact",
+    "text": "About and contact\nIf you want the quick story of who I am and what I work on:\nAbout me\nIf you want to get in touch about data science, consulting, projects or any of my hobbies:\nContact"
+  },
+  {
+    "objectID": "School Index.html",
+    "href": "School Index.html",
+    "title": "MASDS Portfolio",
+    "section": "",
+    "text": "STAT 404 Final — Arsenal Analysis\n\nView Project (PDF)\n\n\n\n\nSTAT 418 Project — Why Arsenal Is Always 2nd Place\n\nView Project (PDF)\n\n\n\n\nSTAT 421 - LA Vehicle Thefts Analysis\n\nView Project (PDF)\n\n\n\n\nSTAT 421 - Gas Forecast\n\nView Project (PDF)"
+  },
+  {
+    "objectID": "School Index.html#projects",
+    "href": "School Index.html#projects",
+    "title": "MASDS Portfolio",
+    "section": "",
+    "text": "STAT 404 Final — Arsenal Analysis\n\nView Project (PDF)\n\n\n\n\nSTAT 418 Project — Why Arsenal Is Always 2nd Place\n\nView Project (PDF)\n\n\n\n\nSTAT 421 - LA Vehicle Thefts Analysis\n\nView Project (PDF)\n\n\n\n\nSTAT 421 - Gas Forecast\n\nView Project (PDF)"
+  },
+  {
+    "objectID": "School Index.html#papers",
+    "href": "School Index.html#papers",
+    "title": "MASDS Portfolio",
+    "section": "Papers",
+    "text": "Papers\n\n\n\n\nWhat Factors Influence Yelp Stars\n\nView Project (PDF)\n\n\n\n\nWhy Arsenal Is Always 2nd Place\n\nView Project (PDF)\n\n\n\n\nHow Does Havertz Effect Arsenal\n\nView Project (PDF)"
+  },
+  {
+    "objectID": "School Index.html#arsenal-graphics",
+    "href": "School Index.html#arsenal-graphics",
+    "title": "MASDS Portfolio",
+    "section": "Arsenal Graphics",
+    "text": "Arsenal Graphics"
+  },
+  {
+    "objectID": "School Index.html#project-graphics",
+    "href": "School Index.html#project-graphics",
+    "title": "MASDS Portfolio",
+    "section": "Project Graphics",
+    "text": "Project Graphics"
+  },
+  {
+    "objectID": "Pook.html",
+    "href": "Pook.html",
+    "title": "Pook",
+    "section": "",
+    "text": "Unlock"
+  },
+  {
+    "objectID": "Pook.html#enter-password",
+    "href": "Pook.html#enter-password",
+    "title": "Pook",
+    "section": "",
+    "text": "Unlock"
+  },
+  {
+    "objectID": "Lego Index.html",
+    "href": "Lego Index.html",
+    "title": "LEGO",
+    "section": "",
+    "text": "10305 — Lion Knights’ Castle\nCastle • 4514 pcs\nNew\n\n\n\n75396 — Sarlacc Pitt\nStarwars • 558 pcs\nNew\n\n\n\n76300 — Arkham Asylum\nBatman • 2953 pcs\nNew\n\n\n 10332 — Medieval Town Square\nCastle • 3304 pcs\nNew\n\n\n 75407 — Starwars Logo\nStarwars • 700 pcs\nNew\n\n\n 75407 — Starwars Advent\nStarwars • 263 pcs\nNew\n\n\n 7626 — Jungle Cutter\nIndiana Jones • 511 pcs\nUsed\n\n\n 75314 — Bad Batch Shuttle\nStarwars • 969 pcs\nNew\n\n\n 21343 — Viking Village\nIcons • 2103 pcs\nNew"
+  },
+  {
+    "objectID": "Lego Index.html#recent-pickups",
+    "href": "Lego Index.html#recent-pickups",
+    "title": "LEGO",
+    "section": "",
+    "text": "10305 — Lion Knights’ Castle\nCastle • 4514 pcs\nNew\n\n\n\n75396 — Sarlacc Pitt\nStarwars • 558 pcs\nNew\n\n\n\n76300 — Arkham Asylum\nBatman • 2953 pcs\nNew\n\n\n 10332 — Medieval Town Square\nCastle • 3304 pcs\nNew\n\n\n 75407 — Starwars Logo\nStarwars • 700 pcs\nNew\n\n\n 75407 — Starwars Advent\nStarwars • 263 pcs\nNew\n\n\n 7626 — Jungle Cutter\nIndiana Jones • 511 pcs\nUsed\n\n\n 75314 — Bad Batch Shuttle\nStarwars • 969 pcs\nNew\n\n\n 21343 — Viking Village\nIcons • 2103 pcs\nNew"
+  },
+  {
+    "objectID": "Contact.html",
+    "href": "Contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\n\n\nContact\n\n\n✉️ Email 🔗LinkedIn 💻 GitHub 𝕏 Profile 📄 Resume\n\n\nBest way to reach me is email."
+  },
+  {
+    "objectID": "Book Index.html",
+    "href": "Book Index.html",
+    "title": "Books",
+    "section": "",
+    "text": "Wind and Truth\nFantasy • 1344 pgs\n\n\n How to Think about Statistics\nStats • 244 pgs"
+  },
+  {
+    "objectID": "Book Index.html#current-reads",
+    "href": "Book Index.html#current-reads",
+    "title": "Books",
+    "section": "",
+    "text": "Wind and Truth\nFantasy • 1344 pgs\n\n\n How to Think about Statistics\nStats • 244 pgs"
+  },
+  {
+    "objectID": "Book Index.html#finished-recently",
+    "href": "Book Index.html#finished-recently",
+    "title": "Books",
+    "section": "Finished Recently",
+    "text": "Finished Recently\n\n\n Speaker for the Dead\nSci-Fi • 415 pgs\n\n\n The Light of all that Falls\nFantasy • 864 pgs\n\n\n Xenocide\nSci-Fi • 592 pgs\n\n\n Ender’s Game\nSci-Fi • 352 pgs"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Matheus (Taye) Grover\n\n\nMASDS @ UCLA · North Pier Search Consulting\n\n\n\nContact\n\n\n✉️ Email 🔗 LinkedIn 💻 GitHub 𝕏 Profile 📄 Resume\n\n\nBest way to reach me is email.\n\n\n\n\nHi, I’m Matheus or Taye Grover\n\nI’m a second year in UCLA’s Masters in Statistics and Data Science. I also work as a Sales and Marketing Intern for North Pier Search Consulting where I’m slowly transitioning to a more data-focused role with them.\n\n\nThis website is a homepage for me to display my academics, projects, and hobbies I’m passionate about. I find it is a lot easier to learn concepts when you can apply them to things you love to do in your free time, so eventually Arsenal, Lego, Books will all have projects attached to them. This website will be constantly updated as I find better ways to show off my projects.\n\n\n\n\nEducation\n\n\nI earned my Bachelor of Arts in Business Management Economics from the University of California, Santa Cruz in June 2024, graduating with a 3.74 GPA. After taking my first econometrics course and excelling in both it and my capstone course, I realized how much I enjoyed data analysis. I ranked among the top students in those courses and was invited by the Head of the Economics Department to serve as a tutor. That experience ultimately led me to pursue my Master of Applied Statistics and Data Science at the University of California, Los Angeles, where I am currently maintaining a 3.96 GPA and expect to graduate in June 2026\n\n\n\n\n\nExperience\n\n\nMy work experience has grown pretty naturally over time as I figured out what I enjoy and what I’m good at. I started out at Humble Sea Brewery, where I spent a few months learning how production actually works day to day. I helped keep materials moving, solved small operational problems, and got a feel for what it takes to keep a physical business running smoothly. They also had hundreds of types of beer they made so i’m always happy to talk about different drinks!\nStarting my Senior year, I became an Econometrics Tutor at UC Santa Cruz after doing really well in the coursework. Working with students and professors forced me to really understand the material, and it showed me that data analysis was something I wanted to keep pursuing. It also gave me the chance to teach which was something I didn’t know I was good at. It was very rewarding helping my students be successful in a class I felt was so important.\nAt the end of my time in Santa Cruz, I moved into a Financial Assistant role at the Homeless Garden Project, which was my first real exposure to working with numbers in a meaningful way. I handled donation and event data, helped with budgeting, cleaned up old records, and realized I genuinely liked making messy information usable. It also was a chance to use my skillset to help an organzation that did so much good to the community. Here is a link to the Homeless Garden Project if you’re interested.\nEverything came together when I joined North Pier Search Consulting. I originally came in as a Sales and Marketing Intern, but over time I took on more analytical and operational work. Now I help with research, R&D checks, CRM clean-ups, advisor analytics, social media strategy, case-study writing, and supporting active search engagements. It’s the role where I’ve grown the most, and it’s also where I started to see how my data skills could actually help solve real business problems. In Summer of 2025, I added another layer of experience at Econ One Research, where I worked on antitrust and class-action cases by cleaning large datasets, building Stata workflows, and reviewing evidence for litigation teams.\nAll of these roles built on each other: Humble Sea taught me structure, tutoring taught me how to communicate, Homeless Garden Project taught me how to apply data to real decisions, Econ One taught me how to work with large, complex datasets under tight deadlines, North Pier taught me what growing in a role feels like. Together, they tell the story of how I grew from general operations work into someone who loves using data to answer hard questions.\n\n\n\n    \n\n\n\nProjects i’m working on right now\n\n\nArsenal analytics: scraping FBref, building match and player trackers, and testing simple forecasting ideas on xG and roles. Eventually I want to combine this with my thesis and be able to out-predict gambling player props. Right now I’m in the data collection phase for my thesis. I need data from 25 teams and over 20 players per team. Twice now data scrapers I’ve built have been patched which has slowed the process.  Marketing analytics: building a structure for marketing analytics at North Pier. I want to increase our social media presence and in order to do that I need to know what works and what doesn’t  Cash Balance project: classified work project cleaning 5500 outputs for cash balance plan returns and basic validation checks.  LEGO price prediction project: focusing on a sub-theme like Star Wars or Batman. I want to understand what drives the after-market value."
+  },
+  {
+    "objectID": "Arsenal2.html",
+    "href": "Arsenal2.html",
+    "title": "Arsenal Match Tracker",
+    "section": "",
+    "text": "Kickoff times shown in Los Angeles time"
+  },
+  {
+    "objectID": "Arsenal2.html#upcoming",
+    "href": "Arsenal2.html#upcoming",
+    "title": "Arsenal Match Tracker",
+    "section": "Upcoming",
+    "text": "Upcoming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nOpponent\nHome/Away\nCompetition\nKickoff\nResult\nxG For\nxG Against\nNotes\n\n\n\n\n2025-12-10\n Club Brugge\nAway\nUCL\n12:00 PM\n\n\n\n\n\n\n2025-12-13\n Wolves\nHome\nPremier League\n12:00 PM\n\n\n\n\n\n\n2025-12-20\n Everton\nAway\nPremier League\n12:00 PM"
+  },
+  {
+    "objectID": "Arsenal2.html#results",
+    "href": "Arsenal2.html#results",
+    "title": "Arsenal Match Tracker",
+    "section": "Results",
+    "text": "Results\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nOpponent\nHome/Away\nCompetition\nKickoff\nResult\nxG For\nxG Against\nNotes\n\n\n\n\n2025-12-06\n Aston Villa\nAway\nPremier League\n4:30 AM\n1-2 L\n1.92\n2.16\nTrossard 52’\n\n\n2025-12-03\n Brentford\nHome\nPremier League\n11:30 AM\n2-0 W\n1.77\n0.35\nMerino 11’, Saka 90+1’\n\n\n2025-11-30\n Chelsea\nAway\nPremier League\n8:30 AM\n1-1 D\n1.26\n0.79\nMerino 59’\n\n\n2025-11-08\n Sunderland\nAway\nPremier League\n9:30 AM\n2-2 D\n1.91\n0.44\nSaka 54’, Trossard 74’\n\n\n2025-11-04\n Slavia Prague\nAway\nUCL\n9:45 AM\n3-0 W\n1.81\n0.47\nSaka 32’(P), Merino 46’, 68’\n\n\n2025-11-01\n Burnley\nAway\nPremier League\n8:00 AM\n2-0 W\n2.42\n0.42\nGyokeres 14’, Rice 35’\n\n\n2025-10-29\n Brighton\nHome\nEFL\n12:30 PM\n2-0 W\n1.2\n1.6\nNwaneri 57’, Saka 76’\n\n\n2025-10-26\n Crystal Palace\nHome\nPremier League\n7:00 AM\n1-0 W\n0.9\n0.5\nEze 39’\n\n\n2025-10-21\n Athletico Madrid\nHome\nUCL\n12:00 PM\n4-0 W\n2.2\n0.7\nGabriel 57’, Martinelli 64’, Gyokeres 67’,70’\n\n\n2025-10-18\n Fulham\nAway\nPremier League\n9:30 AM\n1-0 W\n1.87\n0.44\nTrossard 58’\n\n\n2025-10-04\n West Ham\nHome\nPremier League\n7:00 AM\n2-0 W\n2.8\n0.5\nRice 38’, Saka 67’(P)\n\n\n2025-10-01\n Olympiacos\nHome\nUCL\n12:00 PM\n2-0 W\n2.9\n0.5\nMartinelli 12’, Saka 90+2’\n\n\n2025-09-28\n Newcastle\nAway\nPremier League\n8:30 AM\n2-1 W\n2.0\n0.6\nMerino 84’, Gabriel 90+6’\n\n\n2025-09-24\n Port Vale\nAway\nEFL\n12:00 PM\n2-0 W\n1.1\n0.1\nEze 8’, Trossard 86’\n\n\n2025-09-21\n Man City\nHome\nPremier League\n8:30 AM\n1-1 D\n0.9\n0.9\nMartinelli 90+3’\n\n\n2025-09-16\n Athletic Club\nAway\nUCL\n9:45 AM\n2-0 W\n1.3\n0.4\nMartinelli 72’, Trossard 87’\n\n\n2025-09-13\n Nottingham Forest\nHome\nPremier League\n4:30 AM\n3-0 W\n1.8\n0.2\nZubimendi 32’, 79’, Gyokeres 46’\n\n\n2025-08-31\n Liverpool\nAway\nPremier League\n8:30 AM\n0-1 L\n0.5\n0.5\n\n\n\n2025-08-23\n Leeds\nHome\nPremier League\n9:30 AM\n5-0 W\n2.9\n0.2\nTimber 34’, 56’, Saka 45+1’, Gyokeres 48’, 90+5’(P)\n\n\n2025-09-18\n Man United\nAway\nPremier League\n12:00 PM\n1-0 W\n1.3\n1.5\nCalafiori 13’"
+  }
+]

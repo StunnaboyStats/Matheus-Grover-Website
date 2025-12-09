@@ -1,0 +1,147 @@
+---
+title: "MASDS Portfolio"
+---
+
+<style>
+.project-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.project-card{flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.project-card h3{margin:0 0 8px}
+.project-card p{margin:0 0 14px;color:#444}
+.project-btn{background:#a50000;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block}
+.project-btn:focus,.project-btn:hover{filter:brightness(.95)}
+</style>
+
+
+
+## Projects
+
+<div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+
+<div style="flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <img src="images/arsenal/404thumb.png" style="max-width:100%;border-radius:8px;margin-bottom:12px;">
+  <p><strong>STAT 404 Final — Arsenal Analysis</strong></p>
+  <a href="data/Grover_404Final_Arsenal.pdf" target="_blank" style="background:#a50000;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">View Project (PDF)</a>
+</div>
+
+<div style="flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <img src="images/arsenal/418thumb.png" style="max-width:100%;border-radius:8px;margin-bottom:12px;">
+  <p><strong>STAT 418 Project — Why Arsenal Is Always 2nd Place</strong></p>
+  <a href="data/Final_418.pdf" target="_blank" style="background:#a50000;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">View Project (PDF)</a>
+</div>
+
+<div style="flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <img src="images/arsenal/LACrime.png" style="max-width:100%;border-radius:8px;margin-bottom:12px;">
+  <p><strong>STAT 421 - LA Vehicle Thefts Analysis</strong></p>
+  <a href="data/LA Vehicle Thefts Analysis.pdf" target="_blank" style="background:#a50000;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">View Project (PDF)</a>
+</div>
+
+<div style="flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <img src="images/arsenal/gas2.png" style="max-width:100%;border-radius:8px;margin-bottom:12px;">
+  <p><strong>STAT 421 - Gas Forecast</strong></p>
+  <a href="data/gas.pdf" target="_blank" style="background:#a50000;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">View Project (PDF)</a>
+</div>
+
+
+</div>
+## Papers
+
+<div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+
+<div style="flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <img src="images/arsenal/Yelp.png" style="max-width:100%;border-radius:8px;margin-bottom:12px;">
+  <p><strong>What Factors Influence Yelp Stars</strong></p>
+  <a href="data/STATS_405_Article.pdf" target="_blank" style="background:#a50000;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">View Project (PDF)</a>
+</div>
+
+<div style="flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <img src="images/arsenal/2ndthumb.png" style="max-width:100%;border-radius:8px;margin-bottom:12px;">
+  <p><strong>Why Arsenal Is Always 2nd Place</strong></p>
+  <a href="data/Final_Write_Up.pdf" target="_blank" style="background:#a50000;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">View Project (PDF)</a>
+</div>
+
+<div style="flex:1;min-width:300px;max-width:360px;text-align:center;padding:18px;border:1px solid #ccc;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <img src="images/arsenal/Havertzthumb.png" style="max-width:100%;border-radius:8px;margin-bottom:12px;">
+  <p><strong>How Does Havertz Effect Arsenal</strong></p>
+  <a href="data/Grover_404_Final.pdf" target="_blank" style="background:#a50000;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">View Project (PDF)</a>
+</div>
+
+
+
+</div>
+
+## Arsenal Graphics
+
+<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+
+<a href="data/2Strike.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/2Strike.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+<a href="data/DB Who.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/DB Who.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+<a href="data/FM Rating.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/FM Rating.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+<a href="data/Full team.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/Full team.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+<a href="data/KH Compare Final.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/KH Compare Final.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+<a href="data/KHvMM.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/KHvMM.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+<a href="data/WVWOKH Final.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/WVWOKH Final.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+</div>
+
+
+
+
+
+
+
+## Project Graphics
+
+<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+
+<a href="data/Breakfast Bar.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/Breakfast Bar.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+<a href="data/Breakfast Pie.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/Breakfast Pie.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+<a href="data/gas.png" target="_blank"
+   style="flex:0 0 30%;max-width:300px;">
+  <img src="data/gas.png"
+       style="width:100%;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+</a>
+
+
+</div>

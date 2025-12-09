@@ -1,0 +1,48 @@
+---
+title: "Personal"
+format: html
+---
+
+<div id="locked">
+  <h3>Enter Password</h3>
+
+  <input id="pw" type="password" style="padding:8px;width:80%;" autofocus>
+  <button onclick="unlock()" style="padding:8px 14px;">Unlock</button>
+
+  <p id="msg" style="color:#c00;"></p>
+</div>
+
+<div id="content" style="display:none;">
+  <h2>❤️ hi amber</h2>
+
+  <!-- Add your private stuff here -->
+  <p>This is hidden until the password is correct.</p>
+  <img src="images/lego/mirror.jpg" alt="example" style="max-width:320px;border-radius:12px;">
+  <!-- Keep adding sections, images, embeds, etc. -->
+</div>
+
+<script>
+  // SHA-256 hash of "PTown"
+  const correctHash = "c238204a4366e5170eaf8cb1b7ab469cdf64d35b6a872618a60006c5666bf421";
+
+  async function sha256(text) {
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  async function unlock() {
+    const pw = document.getElementById("pw").value;
+    const hash = await sha256(pw);
+    if (hash === correctHash) {
+      document.getElementById("locked").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      document.getElementById("msg").textContent = "Wrong password";
+    }
+  }
+
+  // Enter key triggers unlock
+  document.getElementById("pw").addEventListener("keydown", e => {
+    if (e.key === "Enter") unlock();
+  });
+</script>

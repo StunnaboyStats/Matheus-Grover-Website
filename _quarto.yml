@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: _site
+  
+execute: 
+  enabled: true
+  echo: false
+  warning: false
+  message: false
+engine: knitr
+
+website:
+  title: "Matheus (Taye) Grover"
+  description: "Projects | Data Science | Statistics"
+  site-url: "https://stunnaboystats.github.io"
+  favicon: images/stunna/stunna3.jpg
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - about.qmd
+      - "School Index.qmd"
+      - "Arsenal2.qmd"
+      - "Lego Index.qmd"
+      - "Book Index.qmd"
+      - "Books Index.qmd"
+      - Contact.qmd
+  page-footer:
+    center: |
+      <img src="images/stunna/stunna3.jpg"
+           alt="Matheus (Taye) Grover"
+           class="footer-avatar">
+      <span class="footer-name">Matheus (Taye) Grover</span>
+      <a href="https://www.linkedin.com/in/matheusgrover/"
+         target="_blank"
+         class="footer-link">
+        LinkedIn
+      </a>
+
+
+format:
+  html:
+    theme: 
+      dark: darkly
+      light: sandstone
+    css: styles.css
+    toc: true
+    code-fold: true
+    page-layout: full
+    
+
+metadata-files:
+  - _meta.yml
+
+resources:
+  - images/
+  - data/

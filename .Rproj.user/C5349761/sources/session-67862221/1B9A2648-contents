@@ -1,0 +1,65 @@
+---
+  title: "Home"
+page-layout: full
+---
+  
+  # Matheus (Taye) Grover
+  
+  Welcome. I am a Master's student in Data Science and Statistics at UCLA.  
+This site is a hub for my projects, coursework, and things I enjoy, like Arsenal and LEGO.
+
+---
+
+## What you will find here
+
+### About me
+
+A quick overview of who I am, what I study, and what I work on.
+
+[Read more about me](about.qmd)
+
+---
+
+## Featured sections
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Arsenal Index
+
+Arsenal and Premier League analytics.  
+Match data, visualizations, and models.
+
+[Go to Arsenal projects](Arsenal2.qmd)
+
+### LEGO Index
+
+LEGO sets, minifigs, and any fun data or collections related to LEGO.
+
+[Go to LEGO index](Lego%20Index.qmd)
+
+:::
+::: {.column width="50%"}
+
+### School Index
+
+Coursework, class projects, and academic work from UCLA.
+
+[Go to School index](School%20Index.qmd)
+
+### Books Index
+
+Books I am reading, with notes and reflections.
+
+[Go to Books index](Books%20Index.qmd)
+
+:::
+:::
+
+---
+
+## Get in touch
+
+If you want to connect about data science, consulting, or projects, you can reach me here.
+
+[Contact](Contact.qmd)

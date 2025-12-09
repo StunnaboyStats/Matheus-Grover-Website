@@ -1,0 +1,4 @@
+title-block-banner: true
+page-footer:
+  left: "© Matheus (Taye) Grover"
+right: "Built with Quarto"

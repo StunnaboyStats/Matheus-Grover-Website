@@ -1,0 +1,15 @@
+{
+  "hash": "75497d92262af30f2efc00200c49d3e4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"LEGO\"\nformat: html\nengine: knitr\nexecute:\n  enabled: true\n---\n\nprint(2 + 2)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

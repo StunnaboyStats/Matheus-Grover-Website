@@ -1,0 +1,152 @@
+---
+title: "Home"
+page-layout: full
+---
+
+<style>
+/* Style the cards on the home page */
+.home-card .card-body {
+  text-align: center;              /* center all text and button */
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+/* Bigger title */
+.home-card .card-title {
+  font-size: 1.4rem !important;
+  font-weight: 600;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Bigger description text */
+.home-card .card-text {
+  font-size: 1.05rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* Keep button nicely sized and centered */
+.home-card .btn {
+  font-size: 0.9rem !important;
+  padding: 0.45rem 1.1rem !important;
+}
+</style>
+
+<div style="text-align:center; margin-bottom: 28px;">
+  <img src="images/stunna/me.jpg"
+       style="width:320px; border-radius: 8px;">
+</div>
+
+
+<div style="text-align:center;">
+  <h1>Matheus (Taye) Grover</h1>
+</div>
+
+
+Welcome. I am a Master's student in Applied Statistics and Data Science at UCLA. This site is a hub for my projects, coursework, and things I enjoy, like Arsenal, Books, and LEGO. Eventually I will expanding the Arsenal and Lego Sections to include two upcoming projects I'm working on that are not ready for the site.
+
+---
+
+## Overview
+
+Below is a preview of sections of my website. You can also reach all the featured sections from the navbar above. I'm a huge fan of dark themes, every chance I get I use them. If you're not a fan, you can switch back to light mode in the top right.
+
+---
+
+## Featured sections
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm home-card">
+
+![](images/arsenal/home.jpg){.card-img-top}
+
+<div class="card-body">
+<h4 class="card-title">Arsenal Index</h4>
+<p class="card-text">
+Arsenal Match Data and Schedule for 2025/2026 Season
+</p>
+[Explore Arsenal](Arsenal2.qmd){.btn .btn-primary .btn-sm}
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm home-card">
+
+![](images/arsenal/lego_home.jpg){.card-img-top}
+
+<div class="card-body">
+<h4 class="card-title">LEGO Index</h4>
+<p class="card-text">
+LEGO sets recently added to the collection.
+</p>
+[Explore LEGO](Lego%20Index.qmd){.btn .btn-primary .btn-sm}
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm home-card">
+
+![](images/arsenal/ucla.png){.card-img-top}
+
+<div class="card-body">
+<h4 class="card-title">School Index</h4>
+<p class="card-text">
+Academic work from UCLA, Projects, Papers, and Graphics 
+</p>
+[Explore School](School%20Index.qmd){.btn .btn-primary .btn-sm}
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 shadow-sm home-card">
+
+![](images/stunna/boo.jpg){.card-img-top}
+
+<div class="card-body">
+<h4 class="card-title">Books Index</h4>
+<p class="card-text">
+Books I am reading or have read within the last year.
+</p>
+[Explore Books](Books%20Index.qmd){.btn .btn-primary .btn-sm}
+</div>
+</div>
+</div>
+
+</div>
+
+---
+
+
+
+
+
+## Recent highlights
+
+A few current things from each page:
+
+-Added gas and LA Crime projects from STAT 421 
+
+-Arsenal analytics: manually scraping data
+
+-LEGO price prediction project: watching castle prices, just built the medieval castle set so any fantasy build has been a focus
+
+-Reading for of Wind and Truth
+
+You can find more detail inside each section.
+
+---
+
+## About and contact
+
+If you want the quick story of who I am and what I work on:
+
+[About me](about.qmd){.btn .btn-outline-primary}
+
+If you want to get in touch about data science, consulting, projects or any of my hobbies:
+
+[Contact](Contact.qmd){.btn .btn-outline-secondary}
