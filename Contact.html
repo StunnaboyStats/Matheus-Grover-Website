@@ -342,6 +342,11 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 auto;
 }
 
+/* Center ONLY the word “Contact” inside the card */
+.contact-wrapper .card h3 {
+  text-align: center;
+}
+
 /* Center the chips row */
 .contact-wrapper .links {
   display: flex;
@@ -364,16 +369,15 @@ ul.task-list li input[type="checkbox"] {
   color: inherit;
 }
 
-/* Center the small text under the chips */
+/* Center the small text */
 .contact-wrapper .small {
   text-align: center;
   font-size: 0.95rem;
 }
 </style>
-<section id="contact" class="level1 contact-wrapper">
-<h1>Contact</h1>
+<div class="contact-wrapper">
 <div class="card">
-<h3 class="anchored" data-anchor-id="contact">
+<h3 class="anchored">
 Contact
 </h3>
 <div class="links">
@@ -383,7 +387,7 @@ Contact
 Best way to reach me is email.
 </p>
 </div>
-</section>
+</div>
 
 
 

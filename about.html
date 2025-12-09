@@ -325,9 +325,36 @@ ul.task-list li input[type="checkbox"] {
 
 
 <style>
-/* Page tone */
-.about p { line-height: 1.6; font-size: 1.05rem; color:#ffffff; }
-.lead { font-size: 1.2rem; color:#ffffff; }
+/* Theme-aware base text */
+.about p { 
+  line-height: 1.6; 
+  font-size: 1.05rem; 
+}
+.lead { 
+  font-size: 1.2rem; 
+}
+.small { 
+  font-size:0.95rem; 
+}
+.about-layout .about-tagline {
+  font-size:0.95rem;
+}
+
+/* DARK MODE COLORS */
+:root[data-bs-theme="dark"] .about p,
+:root[data-bs-theme="dark"] .lead,
+:root[data-bs-theme="dark"] .small,
+:root[data-bs-theme="dark"] .about-layout .about-tagline {
+  color:#ffffff;
+}
+
+/* LIGHT MODE COLORS */
+:root[data-bs-theme="light"] .about p,
+:root[data-bs-theme="light"] .lead,
+:root[data-bs-theme="light"] .small,
+:root[data-bs-theme="light"] .about-layout .about-tagline {
+  color: var(--bs-body-color);
+}
 
 /* Contact chips */
 .links { 
@@ -335,23 +362,31 @@ ul.task-list li input[type="checkbox"] {
   flex-wrap:wrap; 
   gap:10px; 
   margin:16px 0 6px; 
-  justify-content:center;   /* centers the chips */
+  justify-content:center;
 }
-  display:inline-flex; align-items:center; gap:8px;
-  padding:8px 12px; border:1px solid #e3e3e3; border-radius:999px;
-  text-decoration:none; font-weight:500;
+.link-chip {
+  display:inline-flex; 
+  align-items:center; 
+  gap:8px;
+  padding:8px 12px; 
+  border:1px solid #e3e3e3; 
+  border-radius:999px;
+  text-decoration:none; 
+  font-weight:500;
   color: inherit;
 }
 .link-chip:hover { background:#f7f7f7 }
 
 /* Section cards */
-.card { border:1px solid #eee; border-radius:12px; padding:16px 18px; margin:18px 0; }
+.card { 
+  border:1px solid #eee; 
+  border-radius:12px; 
+  padding:16px 18px; 
+  margin:18px 0; 
+}
 .card h3 { margin-top:0 }
 
-/* Small text */
-.small { color:#ffffff; font-size:0.95rem }
-
-/* Layout similar to Nam's page */
+/* Layout + images */
 .about-layout { margin-top: 1.5rem; }
 .about-layout .left-col { text-align:center; }
 .about-layout .profile-photo {
@@ -366,13 +401,8 @@ ul.task-list li input[type="checkbox"] {
   margin-top:4px;
   margin-bottom:4px;
 }
-.about-layout .about-tagline {
-  color:#ffffff;
-  font-size:0.95rem;
-  margin-bottom:12px;
-}
 
-/* Extra sections on right (education / experience) */
+/* Extra sections */
 .section-block {
   margin-top: 24px;
 }
@@ -381,9 +411,8 @@ ul.task-list li input[type="checkbox"] {
   max-width:260px;
   border-radius:16px;
   display:block;
-  margin:0 auto 10px;   /* centers the image */
+  margin:0 auto 10px;
 }
-
 
 @media (min-width:768px) {
   .about-layout .left-col { padding-right:18px; }
@@ -447,10 +476,10 @@ All of these roles built on each other: Humble Sea taught me structure, tutoring
 </div>
 <div class="card">
 <h3 class="anchored">
-Projects i’m working on right now
+Projects I’m working on right now
 </h3>
 <p class="small">
-<strong>Arsenal analytics</strong>: scraping FBref, building match and player trackers, and testing simple forecasting ideas on xG and roles. Eventually I want to combine this with my thesis and be able to out-predict gambling player props. Right now I’m in the data collection phase for my thesis. I need data from 25 teams and over 20 players per team. Twice now data scrapers I’ve built have been patched which has slowed the process. <br><br> <strong>Marketing analytics</strong>: building a structure for marketing analytics at North Pier. I want to increase our social media presence and in order to do that I need to know what works and what doesn’t <br><br> <strong>Cash Balance project</strong>: classified work project cleaning 5500 outputs for cash balance plan returns and basic validation checks. <br><br> <strong>LEGO price prediction project</strong>: focusing on a sub-theme like Star Wars or Batman. I want to understand what drives the after-market value.
+<strong>Arsenal analytics</strong>: scraping FBref, building match and player trackers, and testing simple forecasting ideas on xG and roles. Eventually I want to combine this with my thesis and be able to out-predict gambling player props. Right now I’m in the data collection phase for my thesis. I need data from 25 teams and over 20 players per team. Twice now data scrapers I’ve built have been patched which has slowed the process. <br><br> <strong>Marketing analytics</strong>: building a structure for marketing analytics at North Pier. I want to increase our social media presence and in order to do that I need to know what works and what doesn’t. <br><br> <strong>Cash Balance project</strong>: classified work project cleaning 5500 outputs for cash balance plan returns and basic validation checks. <br><br> <strong>LEGO price prediction project</strong>: focusing on a sub-theme like Star Wars or Batman. I want to understand what drives the after-market value.
 </p>
 </div>
 </div>
