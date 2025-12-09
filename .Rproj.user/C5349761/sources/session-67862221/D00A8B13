@@ -3,7 +3,7 @@
     "path": "~/Matheus-Grover-Website/about.qmd",
     "project_path": "about.qmd",
     "type": "quarto_markdown",
-    "hash": "3331426624",
+    "hash": "1971003019",
     "contents": "",
     "dirty": false,
     "created": 1761776053066.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "80,28",
-        "scrollLine": "73",
+        "cursorPosition": "152,0",
+        "scrollLine": "142",
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
@@ -21,11 +21,11 @@
         "rmdVisualModeLocation": "2:911"
     },
     "folds": "",
-    "lastKnownWriteTime": 1765258507,
+    "lastKnownWriteTime": 1765302797,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1765258507921,
+    "last_content_update": 1765302797541,
     "read_only": false,
     "read_only_alternatives": []
 }

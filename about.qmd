@@ -78,7 +78,7 @@ page-layout: article
 ::: {.row}
 
 ::: {.col-md-4 .left-col}
-<img src="images/stunna/germ.jpg" alt="Matheus (Taye) Grover" class="profile-photo">
+<img src="images/stunna/Germ.jpg" alt="Matheus (Taye) Grover" class="profile-photo">
 
 <div class="about-name">Matheus (Taye) Grover</div>
 <div class="about-tagline">MASDS @ UCLA · North Pier Search Consulting</div>
@@ -142,7 +142,7 @@ All of these roles built on each other: Humble Sea taught me structure, tutoring
 
 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap:24px; align-items:center; text-align:center; margin:28px 0;">
 
-  <img src="images/stunna/hs.png" alt="Humble Sea Brewery" style="height:60px;">
+  <img src="images/stunna/HS.png" alt="Humble Sea Brewery" style="height:60px;">
   <img src="images/stunna/hs2.png" alt="UC Santa Cruz" style="height:60px;">
   <img src="images/stunna/ucsc3.jpeg" alt="Homeless Garden Project" style="height:60px;">
   <img src="images/stunna/e12.jpg" alt="Econ One" style="height:60px;">
